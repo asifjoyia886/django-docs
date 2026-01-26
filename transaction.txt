@@ -6,3 +6,11 @@ Transaction:
  group as whole ik unit k trha kam krta ha,jaha error aya  to wo rollback ho jae .ye bht import ha jaha p cheze ik dora p depended hai
 -transaction jo ha wo blck level p lg skti ha aur pora view p lg skti ha,
 -transactio.atomic() ye block ko control kre ga kis ko transaction bnana ha kis ko ni bnan ha ye bht import ha.
+START TRANSACTION
+  customer ✔
+  order ✔
+    SAVEPOINT
+      payment ❌
+    ROLLBACK TO SAVEPOINT
+COMMIT
+→ email sent
