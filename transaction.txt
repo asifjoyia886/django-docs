@@ -1,0 +1,8 @@
+by default django autocommit mode mai kam krta ha ,us k mtlb ye ha k agr koi bhe query chali to autocommit ho jae gi ,phr next query exicute ho gi aur wo db mai save 
+ho gi,let say ,agr second query fail ho gi to chonk pehla query save ho gi ha to ,wo rollback no gi,sirf seond query jis mai error ae ha wo he rollback ho gi.
+e.g ap na 10000 withdra keye aur deposit keya to agr dono exicute ho successfully hn tabhi commit ho db save ho cheze wrna ..
+Transaction: 
+          us mai mode mai keya hota ha k agr sari queries ya group of queries jo ha wo successfully exicute howe to tabhi he commit ho gi wrna rollback ho jae ga.
+ group as whole ik unit k trha kam krta ha,jaha error aya  to wo rollback ho jae .ye bht import ha jaha p cheze ik dora p depended hai
+-transaction jo ha wo blck level p lg skti ha aur pora view p lg skti ha,
+-transactio.atomic() ye block ko control kre ga kis ko transaction bnana ha kis ko ni bnan ha ye bht import ha.
