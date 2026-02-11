@@ -1,0 +1,6 @@
+aggrigations:
+        koi ik single resutl chaye ho bht sara data k base p to waha aggrigations ati ha.
+        Ye resutl jo ha ik dict hoti ha.jis mai wo resutl save kre ga wo dict k name go ga ,jb k aggrigate func k ander jis veriable mai wo ik single definate result ae ga us ko key kehta 
+        e.g     result = Model.object.aggrigate(avg=Avg('field'))
+        dict jo ha wo result ha ,aur avg us k keya ha ,us keya s unlck ho ga (single effect/behavior.)
+        
